@@ -5,6 +5,29 @@ html, body {
   overflow: hidden;
 }
 
+#le-anh-tu-text {
+  font-size: 10em; /* Kích thước chữ rất lớn */
+  font-family: 'Arial Black', sans-serif; /* Một font chữ đậm */
+  text-align: center;
+  position: absolute; /* Đặt vị trí tuyệt đối */
+  top: 50%; /* Đặt ở giữa màn hình theo chiều dọc */
+  left: 50%; /* Đặt ở giữa màn hình theo chiều ngang */
+  transform: translate(-50%, -50%); /* Căn giữa chính xác */
+  background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet); /* Tạo dải màu cầu vồng */
+  -webkit-background-clip: text; /* Cắt nền theo chữ */
+  -webkit-text-fill-color: transparent; /* Làm cho chữ trong suốt để thấy nền */
+  animation: color-change 5s linear infinite; /* Thêm hiệu ứng chuyển màu */
+}
+
+@keyframes color-change {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
