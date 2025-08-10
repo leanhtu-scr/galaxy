@@ -427,8 +427,8 @@ body:not(.landscape-warning-active) #container canvas {
   100% { transform: rotate(-18deg); }
 >>>>>>> 9502ce0db30f9420a500a663222084659d2848f2
 } 
-
-#le-anh-tu-text {
+  
+le-anh-tu-text {
   font-size: 10em; /* Kích thước chữ lớn */
   font-family: 'Arial Black', sans-serif; /* Font chữ đậm */
   text-align: center;
@@ -441,7 +441,6 @@ body:not(.landscape-warning-active) #container canvas {
   -webkit-text-fill-color: transparent; /* Làm chữ trong suốt */
   animation: color-change 5s linear infinite; /* Hiệu ứng chuyển màu */
 }
-
 @keyframes color-change {
   0% {
     filter: hue-rotate(0deg);
