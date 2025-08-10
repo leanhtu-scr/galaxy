@@ -427,3 +427,27 @@ body:not(.landscape-warning-active) #container canvas {
   100% { transform: rotate(-18deg); }
 >>>>>>> 9502ce0db30f9420a500a663222084659d2848f2
 } 
+
+#le-anh-tu-text {
+  font-size: 10em; /* Kích thước chữ lớn */
+  font-family: 'Arial Black', sans-serif; /* Font chữ đậm */
+  text-align: center;
+  position: absolute; /* Vị trí tuyệt đối */
+  top: 50%; /* Đặt ở giữa theo chiều dọc */
+  left: 50%; /* Đặt ở giữa theo chiều ngang */
+  transform: translate(-50%, -50%); /* Căn giữa chính xác */
+  background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet); /* Dải màu cầu vồng */
+  -webkit-background-clip: text; /* Cắt nền theo chữ */
+  -webkit-text-fill-color: transparent; /* Làm chữ trong suốt */
+  animation: color-change 5s linear infinite; /* Hiệu ứng chuyển màu */
+}
+
+@keyframes color-change {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
